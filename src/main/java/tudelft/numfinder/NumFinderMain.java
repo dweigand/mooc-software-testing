@@ -11,6 +11,9 @@ public class NumFinderMain {
         // this crashes
         nf.find(new int[] {4, 3, 2, 1});
 
+        // this crashes
+        nf.find(null);
+
         System.out.println(nf.getLargest());
         System.out.println(nf.getSmallest());
     }
