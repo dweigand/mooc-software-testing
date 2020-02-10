@@ -79,3 +79,5 @@ target/
 .classpath
 .project
 .settings/
+*.pyc
+.vscode/settings.json
