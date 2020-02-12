@@ -12,8 +12,21 @@ public class CountLettersTest {
     }
 
     @Test
+    public void multipleMatchingWordsR() {
+        int words = new CountLetters().count("cats|door");
+        Assertions.assertEquals(2, words);
+    }
+
+
+    @Test
     public void lastWordDoesNotMatch() {
-        int words = new CountLetters().count("cats|dog");
+        int words = new CountLetters().count("car|dog");
+        Assertions.assertEquals(1, words);
+    }
+
+    @Test
+    public void firstWordDoesNotMatch() {
+        int words = new CountLetters().count("cat|dogs");
         Assertions.assertEquals(1, words);
     }
 
