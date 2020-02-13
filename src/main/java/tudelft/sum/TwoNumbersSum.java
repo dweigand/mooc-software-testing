@@ -23,6 +23,9 @@ class TwoNumbersSum {
                 total -= 10;
             }
             result.add(i, total);
+            if (complement > 0 && (i+1) == Math.max(first.size(), second.size())){
+                result.add((i+1), complement);
+            }
         }
 
         Collections.reverse(result);
